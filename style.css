@@ -1,0 +1,39 @@
+:root{
+    --background: #21302f;
+    --button-prime: #05fadd;
+    --button-shadow-prime: #05fadd;
+    --white: #fff;
+    --button-shadow-second: #05fadd;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    height: 100vh;
+}
+
+.button{
+    border: 4px solid var(--button-prime);
+    font-size: 4rem;
+    padding: 0.4em 0.7em;
+    border-radius: 0.3em;
+    color: var(--button-prime);
+    background: transparent;
+    display: inline-block;
+    cursor: pointer;
+    text-shadow:
+        0 0 0.125em hsl(0 0% 100% / 0.7), 
+        0 0 0.25em currentColor;
+    box-shadow: 
+        inset 0 0 0.5em 0 currentColor, 
+        0 0 0.5em 0 currentColor;
+}
